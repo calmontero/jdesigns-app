@@ -48,6 +48,13 @@
 .active {
   color: #f5deb3 !important;
 }
+
+@media only screen and (max-width : 768px) {
+  .navbar-collapse {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  border-radius: 10px;
+  }
+}
 //// NAVBAR ////
 
 //// CRAFTSECTION ////
@@ -60,6 +67,20 @@
   align-items: center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+}
+
+.craft-container h1 {
+  color: red;
+  font-family: 'Arima', cursive;
+  font-size: 100px;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.craft-container span {
+  color: whitesmoke;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  text-shadow: 2px 2px black;
 }
 
 video {
@@ -86,7 +107,7 @@ h1 {
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -104,6 +125,9 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  border: 2px solid pink;
+  box-shadow: 5px 10px #888888;
+  
 }
 
 .cards__item__link {
@@ -136,7 +160,7 @@ h1 {
   bottom: 0;
   margin-left: 10px;
   padding: 6px 8px;
-  max-width: calc((100%) - 60px);
+  max-width: calc((200%) - 60px);
   font-size: 12px;
   font-weight: 700;
   color: #fff;
@@ -182,12 +206,20 @@ h1 {
 @media only screen and (min-width: 1024px) {
   .cards__items {
     display: flex;
+    width: 1000px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+  .craft-container h1 {
+    font-size: 50px;
+  }
+  .craft-container span {
+    font-size: 20px;
+    text-align: center;
   }
 }
 //// CRAFTJOBS ////
@@ -316,38 +348,11 @@ h1 {
 //// FOOTER //// 
 .footer-container {
   background-color: #242424;
-  padding: 4rem 0 2rem 0;
+  padding: 0rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer-subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  margin-bottom: 24px;
-  padding: 24px;
-  color: #fff;
-}
-
-.footer-subscription > p {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-
-.footer-subscription-heading {
-  margin-bottom: 24px;
-  font-size: 24px;
-}
-
-.footer-subscription-text {
-  margin-bottom: 24px;
-  font-size: 20px;
 }
 
 .footer-input {
@@ -433,7 +438,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 240px;
+  width: 140px;
 }
 
 .social-logo {
@@ -446,6 +451,10 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.website-rights {
+  color: #fff;
 }
 
 
@@ -471,7 +480,5 @@ h1 {
   }
 }
 
-@media screen and (max-width: 768px) {
-}
 
 //// FOOTER ////

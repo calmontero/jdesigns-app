@@ -1,6 +1,5 @@
 import React from "react";
 import "../../App.scss";
-//import { Row, Col } from 'react-bootstrap';
 import CardItem from "../CardItem/CardItem";
 
 function CraftJobs() {

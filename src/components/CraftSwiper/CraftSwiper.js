@@ -19,7 +19,7 @@ function CraftSwiper() {
     const [slides, setSlides] = useState([]);
     const history = useHistory();
     const [done, setDone] = useState(undefined);
-    const [service, setService] = useState("No Disponible");
+    const [service, setService] = useState("");
 
     //Recover the data
     useEffect(() => {

@@ -6,20 +6,18 @@ import "../../App.scss";
 function Footer() {
     return (
         <div className='footer-container'>
-        
-        <section class='social-media'>
+          <section class='social-media'>
           <div class='social-media-wrap'>
             <div class='footer-logo'>
               <Link to='/' className='social-logo'>
-                JDesigns
-                <i class='fab fa-typo3' />
+                JDesigns   
               </Link>
             </div>
             <small class='website-rights'>JDesigns © 2022</small>
             <div class='social-icons'>
               <Link
                 class='social-icon-link facebook'
-                to='/'
+                to= {{ pathname: "https://www.facebook.com/" }}
                 target='_blank'
                 aria-label='Facebook'
               >
@@ -27,40 +25,24 @@ function Footer() {
               </Link>
               <Link
                 class='social-icon-link instagram'
-                to='/'
+                to= {{ pathname: "https://www.instagram.com/jdesign_art/" }}
                 target='_blank'
                 aria-label='Instagram'
               >
                 <i class='fab fa-instagram' />
               </Link>
               <Link
-                class='social-icon-link youtube'
-                to='/'
+                class='social-icon-link etsy'
+                to= {{ pathname: "https://www.etsy.com//" }}
                 target='_blank'
-                aria-label='Youtube'
+                aria-label='Etsy'
               >
-                <i class='fab fa-youtube' />
-              </Link>
-              <Link
-                class='social-icon-link twitter'
-                to='/'
-                target='_blank'
-                aria-label='Twitter'
-              >
-                <i class='fab fa-twitter' />
-              </Link>
-              <Link
-                class='social-icon-link twitter'
-                to='/'
-                target='_blank'
-                aria-label='LinkedIn'
-              >
-                <i class='fab fa-linkedin' />
+                <i class='fab fa-etsy' />
               </Link>
             </div>
           </div>
-        </section>
-      </div>
+          </section>
+        </div>
     );
 }
 

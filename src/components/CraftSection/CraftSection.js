@@ -1,14 +1,13 @@
 import React from "react";
 import "../../App.scss";
-import { Row, Col } from 'react-bootstrap';
 
 function CraftSection() {
     return (
-        <Row className="craft-container">
-            <Col>
-                <video src='/videos/Video-01.mp4' autoPlay loop muted />
-            </Col>
-        </Row>
+        <div className="craft-container">
+            <video src='/videos/Video-01.mp4' autoPlay loop muted />
+            <h1>Welcome to JDesigns Page</h1>
+            <span>Papelería creativa para tus eventos, artículos personalizados franelas, tazas, vasos y mucho más...</span>
+        </div>
     );
 }
 
