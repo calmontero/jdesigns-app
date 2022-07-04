@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+//import CloseIcon from '@mui/icons-material/Close';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ReactLoading from "react-loading";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -42,7 +43,7 @@ function CraftSwiper() {
         <div className="craft-swiper-container" >
           <div className="title_wrapper">
             <IconButton aria-label="close">
-              <CloseIcon onClick={handleClick} />
+              <ArrowBackIcon onClick={handleClick} />
             </IconButton>
             <div className="reactLogo">
               <img src="/images/JDesigns-logo.png" />

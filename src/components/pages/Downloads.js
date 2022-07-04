@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.scss";
 
-function Services() {
+function Downloads() {
     return (
         <div>
             <h1 className='services'>EN CONSTRUCCION</h1>
@@ -9,4 +9,4 @@ function Services() {
     );
 }
 
-export default Services;
+export default Downloads;
