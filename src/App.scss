@@ -52,8 +52,7 @@
 
 @media only screen and (max-width : 768px) {
   .navbar-collapse {
-  //background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  background: #f39393;
+  background: linear-gradient(#e66465, #9198e5);
   border-radius: 10px;
   }
 
@@ -266,10 +265,18 @@ h1 {
   .craft-swiper-container {
     margin-top: 10%;
   }
+
+  .testimonial {
+    margin-top: 30%;
+  }
+
+  .download {
+    padding-top: 15%;
+  }
 }
 
 .craft-swiper-container .swiper-container {
-  width: 70%;
+  width: 75%;
   position: absolute;
   left: 50%;
   bottom: -16vw;
@@ -434,5 +441,46 @@ h1 {
     margin: 10px;
   }
 }
-
 //// FOOTER ////
+
+//// TESTIMONIAL //// 
+.testimonial .list {
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+
+.testimonial .slick-arrow.slick-prev,
+.testimonial .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.testimonial .slick-prev::before,
+.testimonial .slick-next::before {
+  display: none;
+}
+.testimonial .slick-arrow.slick-next {
+  right: -70px;
+}
+.testimonial .slick-arrow.slick-prev {
+  left: -70px;
+}
+.testimonial .slick-dots li button:before {
+  font-size: 15px;
+}
+.testimonial .slick-dots li {
+  top: 15px;
+}
+//// TESTIMONIAL ////
+
+//// DOWNLOADS ////
+.download {
+  margin-top: 8%;
+}
+//// DOWNLOADS ////

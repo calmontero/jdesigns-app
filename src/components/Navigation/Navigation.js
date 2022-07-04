@@ -13,7 +13,7 @@ function Navigation() {
             <Nav className='m-auto' activeKey={location.pathname} >
                 <Nav.Link href="/" style={{color:"white"}} >Home</Nav.Link>
                 {/*<Nav.Link href="/jobs" style={{color:"white"}} >Servicios</Nav.Link>*/}
-                <Nav.Link href="/testimonials" style={{color:"white"}} >Testimonios</Nav.Link>
+                <Nav.Link href="/testimonial" style={{color:"white"}} >Testimonios</Nav.Link>
                 <Nav.Link href="/downloads" style={{color:"white"}} >Descargas</Nav.Link>
             </Nav>
             </Navbar.Collapse>

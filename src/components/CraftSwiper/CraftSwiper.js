@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import IconButton from '@mui/material/IconButton';
-//import CloseIcon from '@mui/icons-material/Close';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ReactLoading from "react-loading";
 // Import Swiper React components
@@ -54,8 +53,8 @@ function CraftSwiper() {
           </div>
           {!done ? (
                 <ReactLoading
-                type={"spinningBubbles"}
-                color={"#03fc4e"}
+                type={"spokes"}
+                color={"#f39393"}
                 height={300}
                 width={300}
                 className={"loading"}
