@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import "../../App.scss";
 
 function Navigation() {
     const location = useLocation();
+    const { pathname } = location;
+    const splitLocation = pathname.split("/");
+    const [expanded, setExpanded] = useState(false);
+
     return (
-        <Navbar collapseOnSelect fixed="top" expand="sm" variant="light"  >
+        <Navbar expanded={expanded} fixed="top" expand="sm" variant="light"  >
             <Container  >
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setExpanded(!expanded)} />
             <Navbar.Collapse id="responsive-navbar-nav" >
             <Nav className='m-auto' activeKey={location.pathname} >
-                <Nav.Link href="/" style={{color:"white"}} >Home</Nav.Link>
-                {/*<Nav.Link href="/jobs" style={{color:"white"}} >Servicios</Nav.Link>*/}
-                <Nav.Link href="/testimonial" style={{color:"white"}} >Testimonios</Nav.Link>
-                <Nav.Link href="/downloads" style={{color:"white"}} >Descargas</Nav.Link>
+                <Link to="/" className="nav-links" activeClassName="selected" onClick={() => setExpanded(false)} >Home</Link>
+                <Link to="/testimonial" className="nav-links" onClick={() => setExpanded(false)}>Testimonios</Link>
+                <Link to="/downloads" className="nav-links" onClick={() => setExpanded(false)}>Descargas</Link>
             </Nav>
             </Navbar.Collapse>
             </Container>

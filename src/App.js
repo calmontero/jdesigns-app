@@ -1,6 +1,6 @@
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
 import Navigation from './components/Navigation/Navigation';
 //import Services from './components/pages/Services';
@@ -13,13 +13,18 @@ function App() {
     <>
       <Router>
         <Navigation />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          {/*<Route path='/' exact component={Services} />*/}
-          <Route path='/testimonial' exact component={Testimonial} />
-          <Route path='/downloads' exact component={Downloads} />
-          <Route path='/services/:id' exact component={CraftSwiper} />
-        </Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/testimonial">
+          <Testimonial />
+        </Route>
+        <Route path="/downloads">
+          <Downloads />
+        </Route>
+        <Route path="/services/:id">
+          <CraftSwiper />
+        </Route>
       </Router>
     </>
   );

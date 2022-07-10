@@ -34,7 +34,7 @@
 //// NAVBAR ////
 .navbar {
   //background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#e66465 50%, #9198e5 100%);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -46,14 +46,24 @@
   text-align: center;
 }
 
-.active {
-  color: #f5deb3 !important;
+.nav-links {
+  color:white;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  color: red; 
+}
+
+.selected {
+  color: yellowgreen !important;
 }
 
 @media only screen and (max-width : 768px) {
   .navbar-collapse {
   background: linear-gradient(#e66465, #9198e5);
   border-radius: 10px;
+  justify-content: center;
   }
 
   .services {
@@ -481,6 +491,6 @@ h1 {
 
 //// DOWNLOADS ////
 .download {
-  margin-top: 8%;
+  margin-top: 7%;
 }
 //// DOWNLOADS ////
