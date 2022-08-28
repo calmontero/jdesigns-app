@@ -10,7 +10,7 @@ function CardItem(props) {
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <input type="image" img
               className='cards__item__img'
-              alt='Travel Image'
+              alt={props.label}
               src={props.src}
             />
           </figure>
